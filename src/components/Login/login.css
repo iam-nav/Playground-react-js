@@ -1,0 +1,46 @@
+
+.content{
+    background-color: #2d3031;
+    max-width: 300px;
+    height: 400px;
+    color: white;
+    margin: auto;
+    border-radius: 15px;
+}
+.header{
+text-align: center;
+ padding-top: 50px;
+}
+.input{
+    text-align: center;
+    background-color: transparent;
+    border-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 30px;
+}
+.input::placeholder{
+   text-align: left;
+}
+input:focus{
+    outline: none;
+    border-color: #388bff;
+    text-align: left;
+    transition:  0.9s;
+}
+.login-card{
+    text-align: center;
+}
+
+.btn{
+    margin-top: 50px;
+    width: 200px;
+    padding: 7px;
+    border-color: #388bff;
+    background: transparent;
+}
+.btn:hover{
+    color: white;
+    cursor: pointer;
+}
