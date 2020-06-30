@@ -1,0 +1,28 @@
+.wrapper{
+display: grid;
+grid-template-columns: 70fr 30fr;  /* it will create the columns horizontally  and fr(fractions) fr is a good pratice  */ 
+grid-column-gap:1em ;     /* it will create a gap between a columns */
+grid-row-gap: 1em;   /* it will create a gap between a column */
+/*________grid-gap:1em_________ we can also use the to provide the to provide the gap of row and column at once */
+grid-auto-rows:350px; /* by this we can set the height of the grid element */
+                      /* _____grid-auto-rows:minmax(300px,auto)________ by this we can set the height of the grid but when the element is overflow with text
+                      it will automatic increase the height. */
+text-align:justify;     /* to equally strached the lines */                     
+}
+
+.wrapper>div{
+    background: #eee;
+    padding: 1em;   
+}
+.wrapper>div:nth-child(odd){/* nth-child stands selecting the element of odd number in div  */
+    background: #ddd;
+}
+.nested>div{
+border: 2px solid black;
+text-align: center;
+}
+.nested{
+    display: grid;
+    grid-template-columns:  repeat(3,3fr);  
+    grid-auto-rows: 100px; /* setting the height of the grid */
+}
